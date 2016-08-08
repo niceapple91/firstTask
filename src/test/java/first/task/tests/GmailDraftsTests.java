@@ -29,7 +29,7 @@ public class GmailDraftsTests {
 
 	@Test(dataProvider = "users", threadPoolSize = 5)
 	public void verifyDraftMessageWithOpenThema(User user) {
-		logger.info("------In verifyDraftMessageWithOutOpen--------");
+		logger.info("------In thread pool--------");
 			ObjectCreator objCr = new ObjectCreator();
 			LoginUserAction loginUser = new LoginUserAction();
 			MessagesUserAction messagesUser = new MessagesUserAction();
